@@ -1,0 +1,71 @@
+* {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+  --light-bg: white;
+  --light-color: black;
+  --dark-bg: black;
+  --dark-color: white;
+}
+
+button {
+  border-style: solid;
+  border-radius: 5px;
+  margin: 2px;
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: #3f97fb;
+  border-color: #1a56bf;
+  cursor: pointer;
+}
+
+b {
+  color: #1a56bf;
+}
+
+a {
+  color: #3f97fb;
+}
+
+a:hover {
+  color: #1a56bf;
+  transition: 0.1s;
+}
+
+select {
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+select:hover {
+  background-color: #3f97fb;
+  border-color: #1a56bf;
+  transition: 0.1s;
+}
+
+#button {
+  text-decoration: none;
+  color: light-dark(var(--light-color), var(--dark-color));
+}
+
+section {
+  margin: 2px;
+}
+
+#backToUp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 25px;
+}
+
+#modalContent {
+  min-width: 20%;
+  min-height: 20%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: light-dark(var(--light-bg), var(--dark-bg));
+}
