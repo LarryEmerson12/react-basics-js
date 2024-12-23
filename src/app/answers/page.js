@@ -1,4 +1,3 @@
-import BackToTop from "@/components/ui/BackToTop";
 import Text from "@/components/Text";
 import Image from "next/image";
 import CodeBlock from "@/components/ui/CodeBlock";
@@ -6,7 +5,6 @@ import CodeBlock from "@/components/ui/CodeBlock";
 export default function Answers() {
   return (
     <>
-      <BackToTop />
       <button>
         <a href="/" id="button">
           Back to Main Page

@@ -1,11 +1,9 @@
 import Counter from "@/components/Counter";
 import Modal from "@/components/Modal";
-import BackToTop from "@/components/ui/BackToTop";
 
 export default function Page() {
   return (
     <>
-      <BackToTop />
       <h1>React</h1>
       <p>
         Hello world. This is a Nextjs project covering <b>React's basics</b>,
