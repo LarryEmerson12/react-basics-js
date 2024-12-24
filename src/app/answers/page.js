@@ -51,7 +51,7 @@ export default function Answers() {
         <>
           <button
             onClick={
-              setCount(count + 1);
+              setCount(count + 1)
             }
           >
             Count is {count}
@@ -66,7 +66,7 @@ export default function Answers() {
   const code1f = `
     <button
       onClick={
-        setCount(count + 1);
+        setCount(count + 1)
       }
     >
       Count is {count}
@@ -85,7 +85,7 @@ export default function Answers() {
         <>
           <button
             onClick={
-              setCount(count + 1);
+              setCount(count + 1)
             }
           >
             Count is {count}
