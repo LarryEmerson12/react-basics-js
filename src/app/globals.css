@@ -4,8 +4,10 @@
   color-scheme: light dark;
   --light-bg: white;
   --light-color: black;
+  --light-terminal: #fbf8f8;
   --dark-bg: black;
   --dark-color: white;
+  --dark-terminal: #000000;
 }
 
 button {
@@ -46,13 +48,17 @@ select:hover {
   transition: 0.1s;
 }
 
+section {
+  margin: 2px;
+}
+
+code {
+  font-family: "Inter mono", monospace;
+}
+
 #button {
   text-decoration: none;
   color: light-dark(var(--light-color), var(--dark-color));
-}
-
-section {
-  margin: 2px;
 }
 
 #backToUp {
@@ -68,4 +74,12 @@ section {
   padding: 10px;
   border-radius: 15px;
   background-color: light-dark(var(--light-bg), var(--dark-bg));
+}
+
+#terminal {
+  max-width: 750px;
+  background-color: light-dark(var(--light-terminal), var(--dark-terminal));
+  min-height: 25px;
+  padding: 20px;
+  border-radius: 10px;
 }
