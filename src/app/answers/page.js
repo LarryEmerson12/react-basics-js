@@ -49,13 +49,7 @@ export default function Answers() {
 
       return(
         <>
-          <button
-            onClick={
-              setCount(count + 1)
-            }
-          >
-            Count is {count}
-          </button>
+          <button onClick={setCount(count + 1)}>Count is {count}.</button>
         </>
       )
     }
@@ -64,41 +58,39 @@ export default function Answers() {
     const [ count, setCount ] = useState(0);
   `;
   const code1f = `
-    <button
-      onClick={
-        setCount(count + 1)
-      }
-    >
-      Count is {count}
-    </button>
+    <button onClick={setCount(count + 1)}>Count is {count}.</button>
   `;
   const code1g = `
+  "use client";
+
+  import { useState } from "react";
+
+  export default function Page() {
+    const [count, setCount] = useState(0);
+
+    return (
+      <>
+        <button onClick={setCount(count + 1)}>Count is {count}.</button>
+        <button onClick={setCount(0)}>Reset</button>
+      </>
+    );
+  }
+  `;
+  const code1h = `
     "use client"
 
-    import { useState } from 'react';
+    import { useState } from "react";
 
-    export default function Page(){
-
-      const [ count, setCount ] = useState(0);
+    export default function Page() {
+      const [ count, setCount ] = useState(0)
 
       return(
         <>
-          <button
-            onClick={
-              setCount(count + 1)
-            }
-          >
-            Count is {count}
-          </button>
-          <button
-            onClick={
-              setCount(0)
-            }
-          >
-            Reset
-          </button>
+          <button onClick={() => {setCount(count + 1)}}>Count is {count}.</button>
+          <button onClick={() => {setCount(0)}}>Reset</button>
         </>
       )
+
     }
   `;
 
@@ -209,8 +201,22 @@ export default function Answers() {
         <CodeBlock code={code1g} />
         <p>
           Right now, in out reset button, we're setting the <code>count</code>{" "}
-          variable to 0, which is reseting it. Let's test our project now, and...
+          variable to 0, which is reseting it. Let's test our project now,
+          and...
         </p>
+        <Image
+          src="/localhost2.png"
+          width={600}
+          height={300}
+          alt="Development server"
+        />
+        <p>
+          ...what? We just had an error. Let's see. Hmm. Okay, that's because we
+          didn't put the <code>setCount(count + 1)</code> inside a function. To
+          add it in a function, simple put it in <code>{"{}"}</code> and add a{" "}
+          <code>() {"=>"}</code> in front of it.
+        </p>
+        <CodeBlock code={code1h} />
       </section>
       <section id="modal">
         <h2>Modal</h2>
