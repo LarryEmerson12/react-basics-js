@@ -85,3 +85,55 @@ code {
   padding: 20px;
   border-radius: 10px;
 }
+
+/* variants for badge component (START) */
+
+#badge- {
+  margin: 5px;
+  padding: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: #e6e7eb;
+  color: #525860;
+}
+
+#badge-green {
+  margin: 5px;
+  padding: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: #bbf7d1;
+  color: #299f52;
+}
+
+#badge-red {
+  margin: 5px;
+  padding: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: #fecbca;
+  color: #ad3938;
+}
+
+#badge-blue {
+  margin: 5px;
+  padding: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: #bedbff;
+  color: #3162ca;
+}
+
+#badge-yellow {
+  margin: 5px;
+  padding: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: #fef18b;
+  color: #bd8e14;
+}

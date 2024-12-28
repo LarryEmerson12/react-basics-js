@@ -1,5 +1,6 @@
 import Counter from "@/components/Counter";
 import Modal from "@/components/Modal";
+import Badge from "@/components/ui/Badge";
 
 export default function Page() {
   return (
@@ -43,6 +44,9 @@ export default function Page() {
             </a>
           </button>
         </div>
+      </section>
+      <section>
+        <h2>For testing<Badge>info!</Badge></h2>
       </section>
     </>
   );
